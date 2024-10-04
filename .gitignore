@@ -1,1 +1,1 @@
-./docker/postgreSql/postgres_data
+docker/postgreSql/postgres_data/*
