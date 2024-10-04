@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dm_staff
+    columns:
+      - name: sk_staff
+        tests:
+          - unique
+          - not_null
+      - name: staff_id
+        tests:
+          - unique
+          - not_null
+      - name: phone
+        tests:
+          - unique
+          - not_null
+      - name: active
+        tests:
+          - accepted_values:
+              values: ['True','False']

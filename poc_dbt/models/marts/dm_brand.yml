@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dm_brand
+    columns:
+      - name: sk_brand
+        tests:
+          - unique
+          - not_null
+      - name: brand_id
+        tests:
+          - unique
+          - not_null
+      - name: brand_name
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dm_category
+    columns:
+      - name: sk_category
+        tests:
+          - unique
+          - not_null
+      - name: category_id
+        tests:
+          - unique
+          - not_null
+      - name: category_name
+        tests:
+          - unique
+          - not_null

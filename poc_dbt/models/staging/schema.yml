@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: poc_dbt_source
+    schema: poc_dbt_source
+    tables:
+      - name: products
+      - name: brands
+      - name: categories
+      - name: customers
+      - name: order_items
+      - name: orders
+      - name: staffs
+      - name: stocks
+      - name: stores

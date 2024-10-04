@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: ft_stock
+    columns:
+      - name: sk_stock
+        tests:
+          - unique
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+      - name: fk_store
+        tests:
+          - relationships:
+              to: ref('dm_store')
+              field: store_id
+      - name: fk_product
+        tests:
+          - relationships:
+              to: ref('dm_product')
+              field: product_id

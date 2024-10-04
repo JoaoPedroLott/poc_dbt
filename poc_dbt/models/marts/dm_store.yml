@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dm_store
+    columns:
+      - name: sk_store
+        tests:
+          - unique
+          - not_null
+      - name: store_id
+        tests:
+          - unique
+          - not_null
+      - name: zip_code
+        tests:
+          - unique
+          - not_null
